@@ -16,7 +16,11 @@ namespace CSharpBasics
 
             //Console.WriteLine();
             //RunCommonDataTypes();
-            RunArrays();
+            //RunArrays();
+
+            //RunMath();
+            //RunBasicRules();
+            RunCastingDataTypes();
 
 
  
@@ -74,6 +78,21 @@ namespace CSharpBasics
             //EssentialArrays.StringArray();
             //EssentialArrays.MyLists();
             EssentialArrays.CreateGrid();
+        }
+
+        static void RunMath()
+        {
+            MathOperators.Arithmetic();
+        }
+
+        static void RunBasicRules()
+        {
+            BasicRules.SomeBasics();
+        }
+
+        static void RunCastingDataTypes()
+        {
+            CastingDataTypes.CastingData();
         }
     }
 }
