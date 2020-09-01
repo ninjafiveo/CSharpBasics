@@ -6,13 +6,22 @@ namespace CSharpBasics
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //Void = Method does not return value. Just contains code. //Main = Entry point of program. All Code Starts here. 
         {
-            Console.WriteLine("Hello World!");
-            MyString();
-
+            //Console.WriteLine("Hello World!");
+            //MyString();
+            RunHooman();
             Console.ReadLine();
-        
+
+            Console.WriteLine();
+
+
+            CommonDataTypes1 MyData = new CommonDataTypes1();
+
+
+
+
+
         }
 
         static void MyString()
@@ -31,6 +40,31 @@ namespace CSharpBasics
             Console.WriteLine($"Here are two truths and a lie. {theTruth}, {theLie}");
             Console.WriteLine($"This is a change. {theTruth}, {theLie}");
 
+        }
+
+        static void RunHooman()
+        {
+            hoomanClass mrSekol = new hoomanClass(); //object created.
+            mrSekol.DogName = "Mozzy";
+            mrSekol.Name = "Captain Awesome";
+            mrSekol.Age = 178;
+            mrSekol.HasDog = true;
+
+            //Run Method
+            mrSekol.Greeting();
+
+            hoomanClass mrSmith = new hoomanClass();
+            mrSmith.HasDog = false;
+            mrSmith.Name = "John Frowny Face Smith";
+            mrSmith.Age = 50;
+
+            mrSmith.Greeting();
+        }
+
+        static void RunCommonDataTypes()
+        {
+            CommonDataTypes1 myData = new CommonDataTypes1();
+            /// Need to change access modifies change what can be accessed. 
         }
     }
 }
