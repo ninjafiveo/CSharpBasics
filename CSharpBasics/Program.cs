@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.ComponentModel.DataAnnotations;
+using CSharpBasics.CSharpEssentials;
 
 namespace CSharpBasics
 {
@@ -10,18 +11,15 @@ namespace CSharpBasics
         {
             //Console.WriteLine("Hello World!");
             //MyString();
-            RunHooman();
-            Console.ReadLine();
+            //RunHooman();
+            //Console.ReadLine();
 
-            Console.WriteLine();
-
-
-            CommonDataTypes1 MyData = new CommonDataTypes1();
-
+            //Console.WriteLine();
+            //RunCommonDataTypes();
+            RunArrays();
 
 
-
-
+ 
         }
 
         static void MyString()
@@ -65,6 +63,17 @@ namespace CSharpBasics
         {
             CommonDataTypes1 myData = new CommonDataTypes1();
             /// Need to change access modifies change what can be accessed. 
+            myData.myName = "Ninja";
+            Console.WriteLine(myData.myName);
+
+        }
+
+        static void RunArrays()
+        {
+            //EssentialArrays.MyArrays(); // You can just pull in the existing value of the class without creating an object. 
+            //EssentialArrays.StringArray();
+            //EssentialArrays.MyLists();
+            EssentialArrays.CreateGrid();
         }
     }
 }
