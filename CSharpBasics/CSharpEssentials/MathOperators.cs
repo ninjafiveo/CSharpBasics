@@ -34,7 +34,7 @@ namespace CSharpBasics
             Console.WriteLine($"Decrement: The decrement of {numberTwo--} is {numberTwo}");
             Console.WriteLine($"Decrement: The decrement of {numberTwo--} is {numberTwo}");
 
-            //Applying it to Center Polygonal
+            //Applying it to Centered Polygonal Number
             decimal centerPolygonal = ((((numberOne * numberTwo) / 2) * (numberTwo - 1)) + 1);
             Console.WriteLine($"The centered polygonal number of {numberOne} and {numberTwo} is: {centerPolygonal}");
 
