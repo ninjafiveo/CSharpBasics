@@ -28,7 +28,7 @@ namespace CSharpBasics
 
         static void MyString()
         {
-            Console.Write("What year were born?");
+            Console.Write("What year was Ben born?");
             int yearBorn = Convert.ToInt32(Console.ReadLine());
             Console.Write("What is your age?");
             string myName = Console.ReadLine();
