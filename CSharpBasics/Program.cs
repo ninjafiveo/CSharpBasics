@@ -8,7 +8,13 @@ namespace CSharpBasics
     {
         static void Main(string[] args)
         {
-            MyCharacterClass();
+            RunFlowControl();
+            
+        }
+
+        static void RunFlowControl()
+        {
+            FlowControl.FlowControl.FCIfElse();
         }
 
         static void MyCharacterClass()
