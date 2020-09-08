@@ -40,7 +40,7 @@ namespace CSharpBasics
             youngNinja.CharacterRace = "Orc";
             youngNinja.HitPoints = 5000;
             youngNinja.CharClass = "Warrior";
-            youngNinja.InGuild = true;
+            youngNinja.InGuild = false;
             youngNinja.CharacterSelect();
             Console.WriteLine();
 
