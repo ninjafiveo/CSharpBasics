@@ -37,16 +37,16 @@ namespace CSharpBasics.FlowControl
         public static void FCElseIf()
         {
             Console.WriteLine("Do you have your parents permission to play? Enter Yes or No.");
-            permission = Console.ReadLine();
-
-            if (permission == "Yes")
+            permission = Console.ReadLine().ToLower();
+            
+            if (permission == "yes" || permission == "y")
             {
                 //run a block of code
                 Console.WriteLine("Great. Let's get started.");
                 Console.ReadLine();
                 //Input method here to start game.
             }
-            else if (permission == "No")
+            else if (permission == "no" || permission == "n")
             {
                 //run block of code
                 Console.WriteLine("Well that's too bad. Try again when you are old enough. Press enter to exit.");
