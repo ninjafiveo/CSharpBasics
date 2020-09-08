@@ -9,10 +9,12 @@ namespace CSharpBasics.FlowControl
         public const int minimumAge = 13;
         public static int playerAge;
         public static string permission;
+        public static int computerRPSRandomNum;
 
 
         public static void FCIfElse()
         {
+            FCSwitchRoll();
             Console.WriteLine("Welcome to Rock Paper Scissors, what is your age?");
             playerAge = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"You inputted {playerAge}.");
@@ -59,6 +61,36 @@ namespace CSharpBasics.FlowControl
                 FCElseIf();
             }
 
+        }
+
+        public static void FCSwitchRoll()
+        {
+            Random computerRandomRPS = new Random();
+            computerRPSRandomNum = computerRandomRPS.Next(1, 4);
+            Console.WriteLine($"PC Random Number is {computerRPSRandomNum}");
+
+            switch (computerRPSRandomNum)
+            {
+                case 4:
+                    Console.WriteLine("Oops PC rolled a 4. That wasn't suppose to happen.");
+                    FCSwitchRoll();
+                    break;
+                case 3:
+                    Console.WriteLine($"PC chose a {computerRPSRandomNum}. That is equal to Rock.");
+                    break;
+                case 2:
+                    Console.WriteLine($"PC chose a {computerRPSRandomNum}. That is equal to Paper.");
+                    break;
+                case 1:
+                    Console.WriteLine($"PC chose a {computerRPSRandomNum}. That is equal to Scissor.");
+                    break;
+                default:
+                    Console.WriteLine($"Something unexpected happened. Roll again.");
+                    FCSwitchRoll();
+                    break;
+            }
+
+            
         }
     }
 }
