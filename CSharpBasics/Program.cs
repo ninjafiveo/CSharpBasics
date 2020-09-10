@@ -8,8 +8,13 @@ namespace CSharpBasics
     {
         static void Main(string[] args)
         {
-            RunFlowControl();
+            RunArrayAndLists();
             
+        }
+
+        static void RunArrayAndLists()
+        {
+            ArrayAndLists.CreateGrid();
         }
 
         static void RunFlowControl()

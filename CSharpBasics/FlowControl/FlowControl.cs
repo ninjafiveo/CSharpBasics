@@ -6,7 +6,9 @@ namespace CSharpBasics.FlowControl
 {
     class FlowControl
     {
+        // TODO: Change minimumeAge to 10;
         public const int minimumAge = 13;
+
         public static int playerAge;
         public static string permission;
         public static int computerRPSRandomNum;
@@ -89,6 +91,8 @@ namespace CSharpBasics.FlowControl
                     FCSwitchRoll();
                     break;
             }
+
+            // TODO: Add winner loser logic here.
 
             
         }
