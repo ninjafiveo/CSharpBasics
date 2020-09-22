@@ -8,8 +8,14 @@ namespace CSharpBasics
     {
         static void Main(string[] args)
         {
-            RunArrayAndLists();
+            RunErrorHandling();
+            Console.ReadKey();
             
+        }
+
+        static void RunErrorHandling()
+        {
+            ErrorHandling.TryCatchMeOutside.MyErrors();
         }
 
         static void RunArrayAndLists()
